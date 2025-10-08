@@ -3,6 +3,7 @@
 This repository holds a small static site (HTML/CSS/JS). Below are quick steps to publish it and connect the custom domain `rumihealingarts.com`.
 
 Prerequisites
+
 - Git installed
 - A GitHub account (for GitHub Pages) or Netlify account (for Netlify)
 - Control of the DNS for `rumihealingarts.com`
@@ -34,15 +35,18 @@ Option B — Netlify
 3. Netlify automatically provisions HTTPS via Let's Encrypt.
 
 DNS notes
+
 - If you prefer `www.rumihealingarts.com` as canonical, create a CNAME for `www` to point to the hosting provider and set a redirect from the root to `www`.
 - DNS propagation can take up to 48 hours, but usually completes within a few minutes to a few hours.
 
 Files added
+
 - `CNAME` — contains the domain name for GitHub Pages.
 - `.github/workflows/pages.yml` — GitHub Actions workflow to publish to GitHub Pages.
 - `netlify.toml` — optional Netlify config.
 
 If you want, I can:
+
 - Initialize git and make the initial commit here.
 - Create the GitHub repo for you (I can't do that without access but I can give exact commands and the workflow is ready).
 - Walk you through DNS changes at your registrar.

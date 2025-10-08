@@ -5,16 +5,25 @@ on:
     branches: [ main ]
 
 jobs:
-  build-and-deploy:
+  deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
     steps:
       - uses: actions/checkout@v4
-      - name: Setup Node (for optional build steps)
+      - name: Setup Node (optional)
         uses: actions/setup-node@v4
         with:
           node-version: '18'
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
+      - name: Build (skip if no build step)
+        run: |
+          # add build commands here if needed
+          echo "No build step configured"
+      - name: Upload pages artifact
+        uses: actions/upload-pages-artifact@v1
         with:
-          deploy_key: ${{ secrets.DEPLOY_KEY }}
-          publish_dir: ./
+          path: ./
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v1

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mana Forge | Healing in Motion</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&family=Space+Grotesk:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <canvas id="constellation"></canvas>
+    <div class="scanline"></div>
+    <nav class="nav">
+      <div class="nav__brand">Mana Forge</div>
+      <div class="nav__links">
+        <a href="#vision">Vision</a>
+        <a href="#rituals">Rituals</a>
+        <a href="#arsenal">Arsenal</a>
+        <a href="#transmission">Transmission</a>
+      </div>
+    </nav>
+    <main class="shell">
+      <section class="hero">
+        <div class="hero__text">
+          <p class="eyebrow">No half measures.</p>
+          <h1>
+            Healing, weaponized.
+            <span
+              class="highlight flare"
+              data-flare="We remix the future with compassion."
+              tabindex="0"
+            >
+              Transcension.
+            </span>
+          </h1>
+          <p
+            class="lede flare"
+            data-flare="You're here to remember: medicine isn't passive. It's kinetic, communal, feral. We fuse biome hacking, ritual engineering, and renegade love into one relentless practice. Step in or step aside."
+            tabindex="0"
+          >
+            Momentum.
+          </p>
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="#transmission">Join the Pulse</a>
+            <a class="btn btn--ghost" href="#vision">Decode the Mission</a>
+          </div>
+        </div>
+        <div class="hero__badge">
+          <div class="badge__inner">
+            <span class="badge__title">Bioelectric Uprising</span>
+            <span class="badge__subtitle">Ignition Cycle: 2044</span>
+            <span class="badge__cta">Initiate Resonance ↗</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="grid" id="vision">
+        <header class="grid__header">
+          <h2>Vision Codex</h2>
+          <p
+            class="flare"
+            data-flare="We rewire nervous systems and narratives. Neo-Tribal wellness fused with Tron-grade circuitry. Unapologetically alive."
+            tabindex="0"
+          >
+            Awakening.
+          </p>
+        </header>
+        <div class="grid__cards">
+          <article class="card">
+            <div class="card__glow"></div>
+            <h3>Healing Through Doing</h3>
+            <p
+              class="flare"
+              data-flare="Sweat equity over slogans. Every practice is a mission. Motion labs, somatic beatdowns, breathwork that tastes like lightning."
+              tabindex="0"
+            >
+              Ignition.
+            </p>
+          </article>
+          <article class="card">
+            <div class="card__glow"></div>
+            <h3>Learning Through Being</h3>
+            <p
+              class="flare"
+              data-flare="We lean into collective intelligence. Modular cohorts, live-scan biofeedback, lore libraries that keep evolving as we do."
+              tabindex="0"
+            >
+              Synapse.
+            </p>
+          </article>
+          <article class="card">
+            <div class="card__glow"></div>
+            <h3>Loving Through Everything</h3>
+            <p
+              class="flare"
+              data-flare="Radical tenderness as rebellion. Sonic ceremonies, plant protocol, neural attunement. We love like we mean it."
+              tabindex="0"
+            >
+              Pulse.
+            </p>
+          </article>
+          <article class="card">
+            <div class="card__glow"></div>
+            <h3>Beauty As Fuel</h3>
+            <p
+              class="flare"
+              data-flare="Every element is designed to enchant. Immersive holo-room visuals, tactile chroma, flavor rituals. Beauty recharges the charge."
+              tabindex="0"
+            >
+              Voltage.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="stack" id="rituals">
+        <header class="stack__header">
+          <h2>Ritual Engine</h2>
+          <p
+            class="flare"
+            data-flare="Built for seekers, movers, healers, misfits. Built to be felt. Here's how we keep the signal hot."
+            tabindex="0"
+          >
+            Ferocity.
+          </p>
+        </header>
+        <div class="stack__grid">
+          <div class="stack__item">
+            <span class="stack__label">001</span>
+            <h3>Pulsework Modules</h3>
+            <p
+              class="flare"
+              data-flare="Adaptive flow sessions that spike endorphins and expand empathy. Sweat, sync, stabilize. Repeat until luminous."
+              tabindex="0"
+            >
+              Charge.
+            </p>
+          </div>
+          <div class="stack__item">
+            <span class="stack__label">002</span>
+            <h3>Resonance Labs</h3>
+            <p
+              class="flare"
+              data-flare="Bio-sonic immersions, chroma therapy, collective debriefs. We test, iterate, and gift the data back to the tribe."
+              tabindex="0"
+            >
+              Orbit.
+            </p>
+          </div>
+          <div class="stack__item">
+            <span class="stack__label">003</span>
+            <h3>Alchemy Kitchens</h3>
+            <p
+              class="flare"
+              data-flare="Fermentation temples. Herb hackers. Taste-driven healing. No bland prescriptions, just full-spectrum nourishment."
+              tabindex="0"
+            >
+              Brew.
+            </p>
+          </div>
+          <div class="stack__item">
+            <span class="stack__label">004</span>
+            <h3>Deep Field Missions</h3>
+            <p
+              class="flare"
+              data-flare="Off-grid adventures to reset the nervous system. Forest breathing, ocean calibrations, starlit councils."
+              tabindex="0"
+            >
+              Traverse.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="arsenal" id="arsenal">
+        <div class="arsenal__header">
+          <h2>Quantum Arsenal</h2>
+          <p
+            class="flare"
+            data-flare="No gimmicks. Every tool is field-tested. Every signal sharpened for impact."
+            tabindex="0"
+          >
+            Armament.
+          </p>
+        </div>
+        <div class="arsenal__list">
+          <article class="arsenal__card">
+            <header>
+              <h3>NeuroMesh Wearables</h3>
+              <span>Sensor-laced, emotion-aware, synced to your flow.</span>
+            </header>
+            <p
+              class="flare"
+              data-flare="Adaptive suits that read micro-tension, trigger chroma pulses, and anchor you back to center in real-time."
+              tabindex="0"
+            >
+              Stabilize.
+            </p>
+          </article>
+          <article class="arsenal__card">
+            <header>
+              <h3>EchoTone Arrays</h3>
+              <span>Acoustic acupuncture, sub-bass resonance.</span>
+            </header>
+            <p
+              class="flare"
+              data-flare="Precision sound scaffolds sculpt the nervous system, layering binaural fields with heartbeat percussion."
+              tabindex="0"
+            >
+              Modulate.
+            </p>
+          </article>
+          <article class="arsenal__card">
+            <header>
+              <h3>Mycelial Cloud</h3>
+              <span>Collective cognition, decentralized intuition.</span>
+            </header>
+            <p
+              class="flare"
+              data-flare="AI-assisted mycelium networks map group wisdom, surfacing insights across ceremony, labs, and daily rituals."
+              tabindex="0"
+            >
+              Converge.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="transmission" id="transmission">
+        <div class="transmission__copy">
+          <h2>Transmission Protocol</h2>
+          <p
+            class="flare"
+            data-flare="Drop your coordinates. We'll ping you when the next portal opens."
+            tabindex="0"
+          >
+            Signal.
+          </p>
+        </div>
+        <form class="transmission__form">
+          <label for="name">Callsign</label>
+          <input id="name" name="name" type="text" placeholder="Cipher" />
+
+          <label for="email">Signal Address</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="you@signal.earth"
+          />
+
+          <label for="intention">Core Intention</label>
+          <textarea
+            id="intention"
+            name="intention"
+            rows="4"
+            placeholder="Rewrite reality in one line"
+          ></textarea>
+
+          <button type="submit" class="btn btn--primary">
+            Initiate Transmission
+          </button>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <p>© Mana Forge Collective. Healing is the uprising.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
